@@ -121,7 +121,7 @@
       //regex agama
       const agamaRegex = document.getElementById('agama-regex')
       const myAgama = document.getElementById('my-agama')
-      const checkAgam = (value) => {
+      const checkAgama = (value) => {
         const regex = /^(Islam|islam|Kristen|kristen|Katolik|katolik|Hindu|hindu|Buddha|buddha|Konghucu|konghucu)$/
         const isAgama = regex.test(value)
         if (isAgama){
@@ -132,7 +132,7 @@
       }
       agamaRegex.addEventListener('keyup', (e) => {
         const value = e.target.value
-        const isAgama =checkAgam(value)
+        const isAgama =checkAgama(value)
         if (isAgama){
           myAgama.innerHTML = 'Agama valid'
         } else {
